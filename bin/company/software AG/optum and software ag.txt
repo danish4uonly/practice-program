@@ -1,0 +1,13 @@
+1. Custom hashmap implementation
+2. print all possible permutation palindrome of string
+3. variable hiding in java
+4. overiding principle main important principle.
+5. spring boot advantages over spring, why microservice ? why spring boot?
+5.1. in Hibernate @Generated( .... all parameter and possible values for identity)
+6. what is microservice?
+7. what is REST   what do you mean by that?
+8. What is webservice?
+9. find the frequency of each character in string.
+10. write all test case of 9.
+11. what is defect defination 
+12. 

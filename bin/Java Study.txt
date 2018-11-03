@@ -1,0 +1,33 @@
+IS-A and HAS-A:
+http://www.w3resource.com/java-tutorial/inheritance-composition-relationship.php
+
+Runnable and Thread difference :
+http://javahungry.blogspot.com/2015/05/implements-runnable-vs-extends-thread-in-java-example.html
+
+
+http://www.programcreek.com/2013/04/why-string-is-immutable-in-java/
+
+
+http://www.programcreek.com/2009/02/4-inner-classes-tutorial-examples/
+
+
+http://www.programcreek.com/2013/08/inner-interface-in-java/
+
+
+http://www.programcreek.com/2014/03/how-developers-sort-in-java/
+
+
+http://www.programcreek.com/2011/09/sort-a-double-linkedlist-in-java/
+
+http://www.programcreek.com/2012/09/sort-a-string-linkedlist-in-java/
+
+
+http://www.programcreek.com/2013/01/sort-linkedlist-of-user-defined-objects-in-java/
+
+
+
+/*
+Both link u have to read to understand why we are overiding equals and hashcode method in our class.
+http://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+http://stackoverflow.com/questions/2265503/why-do-i-need-to-override-the-equals-and-hashcode-methods-in-java
+*/

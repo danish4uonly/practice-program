@@ -1,0 +1,51 @@
+5. Microservices Tooling Supports
+5.1 Using Spring for creating Microservices
+
+    - Setup new service by using Spring Boot
+    - Expose resources via a RestController
+    - Consume remote services using RestTemplate
+    
+    
+
+6. Developing Simple Microservices Example
+For build a simple microservices system following steps required
+
+    Creating Discovery Service (Creating Eureka Discovery Service)
+    Creating MicroService (the Producer)
+        Register itself with Discovery Service with logical service.
+    Create Microservice Consumers find Service registered with Discovery Service
+        Discovery client using a smart RestTemplate to find microservice.
+    
+---------------------------------------------------------------------------------------------------------------------------------
+    
+    Step 1: Creating Discovery Service (Creating Eureka Discovery Service)
+•	Eureka Server using Spring Cloud
+•	We need to implement our own registry service as below.
+Run this Eureka Server application with right click and run as Spring Boot Application and open in browser http://localhost:1111/
+
+
+Step 2: Creating Account Producer MicroService
+Microservice declares itself as an available service and register to Discovery Server created in Step 1.
+•	Using @EnableDiscoveryClient
+•	Registers using its application name
+
+Now run this account service application as Spring Boot application and after few seconds refresh browser to the home page of Eureka Discovery Server at http://localhost:1111/ in previous Step 1. Now one Service registered to the Eureka registered instances with Service Name “ACCOUNT-MICROSERVICE” as below
+
+Step 3: Consumer Service
+•	Create Consumers to find the Producer Service registered with Discovery Service at Step 1.
+•	@EnableDiscoveryClient annotation also allows us to query Discovery server to find miroservices.
+
+
+Now run this consumer service application as Spring Boot application and after few seconds refresh browser to the home page of Eureka Discovery Server at http://localhost:1111/ in previous Step 1. Now one more Service registered to the Eureka registered instances with Service Name “ACCOUNTS-WEB” as below
+
+Lets our consumer consume the service of producer registered at discovery server.
+See this class : RemoteAccountRepository 
+
+Lets open web application which is a consumer of the account microservice registered at Eureka Discovery Server.
+http://localhost:8080/ as below
+Now click on View Account List then fetch all accounts from account microservice.
+http://localhost:8080/accountList
+Now click on any account from the list of accounts to fetch the details of account for account number from account microservice.
+http://localhost:8080/accountDetails?number=5115
+    
+    

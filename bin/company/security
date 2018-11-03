@@ -1,0 +1,35 @@
+http://www.javainuse.com/spring/sprboot_sec
+
+http://www.javainuse.com/spring/spring-boot-oauth-introduction
+
+http://www.javainuse.com/spring/spring-boot-oauth-authorization-code
+
+http://www.javainuse.com/spring/spring-boot-oauth-access-token
+
+
+
+
+Q:How to reload my changes on Spring Boot without having to restart server?
+A: This can be achieved using DEV Tools. With this dependency any changes you save, the embedded tomcat will restart. Spring Boot has a Developer tools (DevTools) module which helps to improve the productivity of developers. One of the key challenge for the Java developers is to auto deploy the file changes to server and auto restart the server. Developers can reload changes on Spring Boot without having to restart my server. This will eliminates the need for manually deploying the changes every time. Spring Boot doesn’t have this feature when it has released it’s first version. This was a most requested features for the developers. The module DevTools does exactly what is needed for the developers. This module will be disabled in the production environment. It also provides H2-database console for better testing the application. The following dependency is used
+
+			<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+			</dependency> 
+			
+
+The DevTool dependency usage for autorestart and H2 DB console is illustrated in this example
+http://www.javainuse.com/spring/SpringBootUsingPagination
+
+
+http://www.javainuse.com/spring/bootyaml
+
+
+
+vvvviiiippppp
+http://www.javainuse.com/spring/SpringBootInterviewQuestions
+
+http://www.javainuse.com/spring/spring-AOP-interview-quesions
+
+
